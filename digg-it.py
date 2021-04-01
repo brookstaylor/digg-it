@@ -24,7 +24,6 @@ WBTC_USDC_PAIR_ID = "0x004375dff511095cc5a197a54140a24efef3a416"
 DIGG_START_BLOCK = 11668293
 
 TEST_ADDRESS = "0xB1AdceddB2941033a090dD166a462fe1c2029484"
-# "***REMOVED***"
 UNISWAP_SUBGRAPH = 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2'
 UNISWAP_POOL_QUERY = """
     query($pairId: String!, $blockNumber: Int) {
