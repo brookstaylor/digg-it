@@ -4,6 +4,7 @@ from decimal import Decimal
 from etherscan import Etherscan
 import json
 import logging
+import os
 import requests
 import sys
 import time
@@ -14,7 +15,7 @@ logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logger = logging.getLogger('digg-it')
 logger.setLevel(logging.DEBUG)
 
-ETHERSCAN_API_KEY = ""
+ETHERSCAN_API_KEY = os.getenv("ETHERSCAN_API_KEY")
 DIGG_ADDRESS = "0x798d1be841a82a273720ce31c822c61a67a601c3"
 USDC_ADDRESS = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
 WBTC_ADDRESS = "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
