@@ -107,13 +107,3 @@ if __name__ == "__main__":
     logger.info(f"Finished at {finish}")
     logger.info(f"Duration: {finish - start}")
 
-    # for tx in formatted_txs:
-    #     d = {
-    #         "block": tx.block_number,
-    #         "type": tx.tx_type,
-    #         "digg_amount": tx.token_amount,
-    #         "digg_supply": tx.totx_digg_supply,
-    #         "digg_price": tx.totx_digg_price,
-    #         "pct_market_cap": tx.market_cap_pct
-    #     }
-    #     print(d)
