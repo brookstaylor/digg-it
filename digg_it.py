@@ -61,7 +61,9 @@ if __name__ == "__main__":
     logger.info("Getting rebases")
     rebases = api.get_rebases()
     logger.info("Getting transactions")
-    digg_txs = api.get_erc20_token_txs(DIGG_START_BLOCK, TEST_ADDRESS, DIGG_ADDRESS)
+    digg_txs = api.get_address_erc20_token_txs(
+        DIGG_START_BLOCK, TEST_ADDRESS, DIGG_ADDRESS
+    )
 
     formatted_txs = []
 
@@ -106,4 +108,3 @@ if __name__ == "__main__":
     finish = time.time()
     logger.info(f"Finished at {finish}")
     logger.info(f"Duration: {finish - start}")
-
